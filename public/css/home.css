@@ -1,0 +1,49 @@
+h4 {
+  font-size: 24px;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+main {
+  background-color: #ebebeb;
+}
+
+main section article {
+  background-color: white;
+  margin: 10px 10px;
+}
+
+.color_header {
+  background-color: #eac926;
+}
+
+footer {
+  background-color: white;
+  margin: 10px;
+}
+
+footer section {
+    margin-top: 10px;
+}
+
+footer section article {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+footer section article i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
+.section_imagenes article img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section_imagenes {
+  text-align: center;
+}
