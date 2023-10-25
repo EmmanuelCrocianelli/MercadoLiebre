@@ -1,7 +1,3 @@
-h4 {
-  font-size: 24px;
-}
-
 body {
   background-color: #ebebeb;
 }
@@ -13,37 +9,63 @@ main {
 main section article {
   background-color: white;
   margin: 10px 10px;
+  margin-top: auto;
 }
 
-.color_header {
-  background-color: #eac926;
+.burger_boton {
+  border-radius: 5px;
+  background-color: #1259c3;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 45%;
+  width: 33px;
 }
+
+.burger_boton i {
+color: white;
+}
+
+header {
+  background-color: #eac926;
+  padding-bottom: 20px;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+}
+
+.section_imagenes article img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.section_imagenes {
+  text-align: center;
+  font-size: 16px;
+}
+
 
 footer {
   background-color: white;
-  margin: 10px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 footer section {
-    margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 footer section article {
   text-align: center;
   margin: 20px 0px;
+  margin-bottom: 50px;
 }
 
 footer section article i {
   font-size: 2em;
   margin-bottom: 10px;
   color: #1259c3;
-}
-
-.section_imagenes article img {
-  max-width: 100%;
-  height: auto;
-}
-
-.section_imagenes {
-  text-align: center;
 }
