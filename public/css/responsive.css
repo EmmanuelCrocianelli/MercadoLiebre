@@ -1,0 +1,23 @@
+@media (max-width: 426px) {
+  nav {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .section_imagenes {
+    font-size: 10px;
+  }
+
+  footer section article {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 427px) {
+  .burger_boton {
+    display: none;
+  }
+}
