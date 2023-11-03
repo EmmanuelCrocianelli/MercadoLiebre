@@ -1,24 +1,40 @@
 body {
-  background-color: #eac926;
   margin: 0;
   padding: 0;
+}
+
+main h4 {
+  font-size: 20px;
+  text-align: left;
+  color: #000000;
+  padding: 20px;
 }
 
 main {
   background-color: #ebebeb;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 header {
   background-color: #eac926;
-  margin-top: 20px;
+  padding-bottom: 2%;
+}
+
+div.contenedor_header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+div.contenedor_logo {
+  padding: 0%;
+  margin: 0%;
 }
 
 .contenedor_logo img {
   margin-top: 10px;
-  margin-left: 40px;
-  width: 150px;
+  width: 50%;
 }
 
 .contenedor_barra {
@@ -39,18 +55,36 @@ header {
   background-color: white;
 }
 
-nav {
-  margin-top: 30px;
+nav.contenedor_lista {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline;
+
+}
+
+ul.nav_ofertas {
+  display: flex;
+  margin-left: 2%;
+  flex-wrap: wrap;
 }
 
 .h4_header {
   margin-top: 10px;
-text-align: center;
+  text-align: center;
   font-size: 14px;
 }
 
-.cuenta_ingresa_compras li {
-  margin-left: 10px;
+ul.cuenta_ingresa_compras {
+  display: flex;
+  text-align: right;
+  margin-right: 2%;
+}
+
+.cuenta_ingresa_compras a {
+  margin-right: 2px;
 }
 
 main section article {
@@ -75,47 +109,43 @@ main section article {
 }
 
 .banner {
-  margin-top: 30px;
   max-width: 100%;
 }
 
-.section_imagenes article {
-  filter: drop-shadow(5px 5px 10px #666 );
+
+.section_ultima_visita {
+  display: flex;
+  flex-direction: row; 
 }
 
-.section_imagenes h4 {
-  text-align: center;
-  color: #666;
- margin-top: 25px;
-  padding: 0%;
+.section_ultima_visita article {
+  filter: drop-shadow(5px 5px 10px #ababab);
+  border-radius: 3%;
 }
 
 
-.section_imagenes article img {
-  margin-left: 25%;
-  max-width: 50%;
+
+.section_ultima_visita article img {
+  max-width: 100%;
   height: auto;
+  border-bottom: 1px solid #e4e2e2;
+  border-radius: 3%;
 }
 
-.section_imagenes {
-  font-size: 16px;
-  flex: 1;
 
-}
-section article p{
- margin-left: 10px;
+section article p {
+  margin-left: 20px;
 }
 
-.section_imagenes h4 {
-  margin-bottom: 50px;
-  font-size: 24px;
-}
+
 
 .fa-truck {
-  margin-left: 10px;
+  border: solid;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 2%;
   color: #39b54a;
-  position: relative;
-  margin-right: 100%;
+  margin-left: 80%;
 }
 
 .OFF {
@@ -123,18 +153,20 @@ section article p{
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   background-color: white;
-  padding-top: 30px;
-  padding-bottom: 20px;
 }
 
 footer section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 footer section article {
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 20px;
   text-align: center;
   margin: 20px 0px;

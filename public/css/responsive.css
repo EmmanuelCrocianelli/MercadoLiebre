@@ -1,6 +1,14 @@
 @media (max-width: 426px) {
-  nav {
+  nav.contenedor_lista{
     display: none;
+  }
+
+  .section_ultima_visita article {
+    filter: none;
+  }
+
+  .section_ultima_visita {
+    display: block;
   }
 
   main {
@@ -12,7 +20,7 @@
   }
 
   footer section article {
-    font-size: 10px;
+font-size: 10px;
   }
 }
 
@@ -21,3 +29,4 @@
     display: none;
   }
 }
+
