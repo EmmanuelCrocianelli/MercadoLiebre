@@ -45,7 +45,7 @@ width: 50%;
 .contenedor_lista {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px; /* Espacio entre el header y el nav */
+  margin-top: 10px; 
 }
 
 .nav_ofertas,
@@ -57,18 +57,16 @@ width: 50%;
 }
 
 .cuenta_ingresa_compras {
-  margin-left: auto; /* Empujar a la derecha */
+  margin-left: auto; 
 }
 
 nav a {
   text-decoration: none;
-  color: #333; /* Color del texto */
+  color: #333;
   padding: 5px;
   display: flex;
   align-items: center;
 }
-
-/* Agrega estilos específicos según sea necesario */
 
 .icono-enlace {
   display: flex;
@@ -77,12 +75,12 @@ nav a {
 
 .icono-enlace a {
   text-decoration: none;
-  color: #333; /* Color del texto */
+  color: #333; 
   padding: 5px;
 }
 
 .icono-enlace i {
-  margin-left: 5px; /* Ajusta el espacio entre el enlace y el icono según sea necesario */
+  margin-left: 5px; 
 }
 
 .burger_boton {
