@@ -3,95 +3,86 @@ body {
   padding: 0;
 }
 
-main h4 {
-  font-size: 20px;
-  text-align: left;
-  color: #000000;
-  padding: 20px;
-}
+/* ------------------------------------------HEADER--------------------------------------------------------------- */
 
-main {
-  background-color: #ebebeb;
+header {
+  background-color: #eac926; 
+  padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
-header {
-  background-color: #eac926;
-  padding-bottom: 2%;
-}
-
-div.contenedor_header {
+.contenedor_header {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-div.contenedor_logo {
-  padding: 0%;
-  margin: 0%;
+.contenedor_logo {
+  width: 20%;
 }
 
-.contenedor_logo img {
-  margin-top: 10px;
-  width: 50%;
+div.contenedor_barra {
+  display: flex;
+  justify-content: center;
 }
 
 .contenedor_barra {
-  margin-top: 10px;
-  margin-left: 30px;
-}
-
-.contenedor_barra input {
-  width: 200px;
-  height: 20px;
-  margin: 0%;
-  padding: 0%;
-}
-
-.fa-magnifying-glass {
-  margin-left: 3px;
-  border: 1px solid;
-  background-color: white;
-}
-
-nav.contenedor_lista {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
 }
 
-nav ul li {
-  display: inline;
-
-}
-
-ul.nav_ofertas {
-  display: flex;
-  margin-left: 2%;
-  flex-wrap: wrap;
+input {
+width: 50%;
+  padding: 5px;
 }
 
 .h4_header {
-  margin-top: 10px;
-  text-align: center;
   font-size: 14px;
+  margin-right: 3%;
 }
 
-ul.cuenta_ingresa_compras {
+.contenedor_lista {
   display: flex;
-  text-align: right;
-  margin-right: 2%;
+  justify-content: space-between;
+  margin-top: 10px; /* Espacio entre el header y el nav */
 }
 
-.cuenta_ingresa_compras a {
-  margin-right: 2px;
+.nav_ofertas,
+.cuenta_ingresa_compras {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-main section article {
-  background-color: white;
-  margin: 10px 20px;
-  margin-top: auto;
-  padding-bottom: 20px;
+.cuenta_ingresa_compras {
+  margin-left: auto; /* Empujar a la derecha */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333; /* Color del texto */
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Agrega estilos específicos según sea necesario */
+
+.icono-enlace {
+  display: flex;
+  align-items: center;
+}
+
+.icono-enlace a {
+  text-decoration: none;
+  color: #333; /* Color del texto */
+  padding: 5px;
+}
+
+.icono-enlace i {
+  margin-left: 5px; /* Ajusta el espacio entre el enlace y el icono según sea necesario */
 }
 
 .burger_boton {
@@ -112,18 +103,31 @@ main section article {
   max-width: 100%;
 }
 
+/* ------------------------------------------MAIN--------------------------------------------------------------- */
+
+main {
+  background-color: #ebebeb;
+}
+
+main h4 {
+  font-size: 20px;
+  text-align: left;
+  color: #000000;
+  padding: 20px;
+}
 
 .section_ultima_visita {
   display: flex;
-  flex-direction: row; 
 }
 
-.section_ultima_visita article {
-  filter: drop-shadow(5px 5px 10px #ababab);
+main section article {
+  background-color: white;
+  margin: 10px 20px;
+  margin-top: auto;
+  padding-bottom: 20px;
+    filter: drop-shadow(5px 5px 10px #ababab);
   border-radius: 3%;
 }
-
-
 
 .section_ultima_visita article img {
   max-width: 100%;
@@ -132,12 +136,9 @@ main section article {
   border-radius: 3%;
 }
 
-
 section article p {
   margin-left: 20px;
 }
-
-
 
 .fa-truck {
   border: solid;
@@ -151,6 +152,8 @@ section article p {
 .OFF {
   color: #39b54a;
 }
+
+/* ------------------------------------------FOOTER--------------------------------------------------------------- */
 
 footer {
   display: flex;
