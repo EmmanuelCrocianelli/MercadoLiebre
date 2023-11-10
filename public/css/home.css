@@ -141,9 +141,13 @@ main section article {
   margin: 10px 20px;
   margin-top: auto;
   padding-bottom: 20px;
-  filter: drop-shadow(5px 5px 10px #ababab);
   border-radius: 3%;
   cursor: pointer;
+  transition: filter 0.3s;
+}
+
+main section article:hover {
+  filter: drop-shadow(5px 5px 10px #ababab);
 }
 
 .section_ultima_visita article img {
@@ -153,17 +157,15 @@ main section article {
   border-radius: 3%;
 }
 
-section article p {
+main section article p {
   margin-left: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-main section article {
-  transition: transform 0.3s;
-}
-
-main section article:hover {
-  transform: scale(1.1);
-  
+main section article:hover p {
+  display: block;
+  opacity: 1;
 }
 
 .fa-truck {
@@ -173,6 +175,11 @@ main section article:hover {
   padding: 2%;
   color: #39b54a;
   margin-left: 80%;
+  transition: transform 0.5s;
+}
+
+.fa-truck:hover {
+  transform: rotate(-90deg);
 }
 
 .OFF {
@@ -189,12 +196,12 @@ footer {
 
 footer section {
   display: flex;
-  justify-content: center;
+  margin-top: 30px;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
-footer section article {
+footer section article{
+  padding: 30px;
   font-size: 14px;
   padding-top: 20px;
   text-align: center;
@@ -203,7 +210,13 @@ footer section article {
 }
 
 footer section article i {
+  padding: 0%;
+  margin: 0%;
   font-size: 2em;
   margin-bottom: 10px;
   color: #1259c3;
+}
+
+footer section article i:hover {
+  color: #031a76;
 }
