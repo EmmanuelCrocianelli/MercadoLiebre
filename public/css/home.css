@@ -33,7 +33,7 @@ div.contenedor_barra {
   position: relative;
 }
 
-input {
+header input {
   width: 50%;
   padding: 5px;
 }
@@ -68,10 +68,15 @@ input {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
   padding: 5px;
   display: flex;
   align-items: center;
+}
+
+nav a:hover {
+font-weight: bolder;
+color: #333;
 }
 
 .icono-enlace {
@@ -115,10 +120,16 @@ main {
 }
 
 main h4 {
+  display: inline-block;
   font-size: 20px;
   text-align: left;
   color: #666;
   padding: 20px;
+  cursor: pointer;
+}
+
+main h4:hover {
+  color: black;
 }
 
 .section_ultima_visita {
